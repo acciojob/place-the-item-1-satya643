@@ -1,9 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Flexbox Layout</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Ensure the holder is a flex container, items spaced, and wrap */
+    .holder {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    /* Simple styling for items */
+    .item {
+      background-color: #4caf50;
+      color: white;
+      padding: 20px;
+      margin: 10px 0;     /* vertical gap between rows */
+      flex: 0 0 auto;     /* no shrink, no grow */
+    }
+  </style>
 </head>
 <body>
 
