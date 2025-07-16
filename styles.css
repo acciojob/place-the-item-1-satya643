@@ -1,18 +1,16 @@
-/* Flex container */
 .holder {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%;         /* Optional: ensure it fills container */
+  width: 100%;
   padding: 10px;
-  box-sizing: border-box; /* Avoid overflow due to padding */
+  box-sizing: border-box;
 }
 
-/* Flex items */
 .item {
   background-color: #4caf50;
   color: white;
   padding: 20px;
   margin: 10px 0;
-  flex: 0 0 auto;       /* Do not grow or shrink */
+  flex: 0 0 auto;
 }
