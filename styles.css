@@ -1,10 +1,11 @@
-
-/* Your CSS Code here. *//* Flex container */
+/* Flex container */
 .holder {
   display: flex;
-  justify-content: space-between;  /* space between items */
-  flex-wrap: wrap;                 /* wrap to next row if overflow */
-  padding: 10px;                   /* optional padding */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;         /* Optional: ensure it fills container */
+  padding: 10px;
+  box-sizing: border-box; /* Avoid overflow due to padding */
 }
 
 /* Flex items */
@@ -12,6 +13,6 @@
   background-color: #4caf50;
   color: white;
   padding: 20px;
-  margin: 10px 0;                 /* vertical spacing between rows */
-  flex: 0 0 auto;                 /* prevent shrinking/squashing */
+  margin: 10px 0;
+  flex: 0 0 auto;       /* Do not grow or shrink */
 }
