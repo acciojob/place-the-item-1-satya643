@@ -1,2 +1,17 @@
 
-/* Your CSS Code here. */
+/* Your CSS Code here. *//* Flex container */
+.holder {
+  display: flex;
+  justify-content: space-between;  /* space between items */
+  flex-wrap: wrap;                 /* wrap to next row if overflow */
+  padding: 10px;                   /* optional padding */
+}
+
+/* Flex items */
+.item {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  margin: 10px 0;                 /* vertical spacing between rows */
+  flex: 0 0 auto;                 /* prevent shrinking/squashing */
+}
